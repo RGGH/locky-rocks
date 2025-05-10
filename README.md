@@ -1,4 +1,4 @@
-# Locky-Rocks: Encrypted Counter with RocksDB
+# Locky-Rocks: Encrypted Counter with RocksDB [![Rust](https://github.com/RGGH/locky-rocks/actions/workflows/rust.yml/badge.svg)](https://github.com/RGGH/locky-rocks/actions/workflows/rust.yml)
 
 A secure, persistent counter implementation that uses RocksDB for storage and AES-GCM for encryption.
 
