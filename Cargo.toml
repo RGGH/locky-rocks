@@ -1,0 +1,25 @@
+[package]
+name = "locky-rocks"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rocksdb = "0.21.0"
+aes-gcm = "0.10.1"
+rand = "0.8.5"
+
+[profile.release]
+# Maximum optimization
+opt-level = 3
+
+# Link-time optimization (LTO) performs optimizations across all crates
+lto = true
+
+# Enable more aggressive optimizations
+codegen-units = 1
+
+# Strip debug symbols
+strip = true
+
+# Panic strategy - abort is faster than unwind
+panic = "abort"
